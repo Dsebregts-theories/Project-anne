@@ -20,9 +20,13 @@ Gebruik uitsluitend de bestaande Project Anne-locaties voor deze website. Gebrui
 
 ### Netlify
 
-Koppel de bestaande Project Anne-site aan deze repository en de branch `main`. De publicatiemap is `dist`; een buildcommando is niet nodig. De configuratie staat in `netlify.toml`. Een uploadpakket voor handmatige publicatie bevat uitsluitend de inhoud van `dist/`, met `index.html` in de hoofdmap van de ZIP.
+De bestaande Netlify-site **slimstartstudio** is gekoppeld aan deze repository en de branch `main`. De publicatiemap is `dist`; een buildcommando is niet nodig. De configuratie staat in `netlify.toml`. Een uploadpakket voor handmatige publicatie bevat uitsluitend de inhoud van `dist/`, met `index.html` in de hoofdmap van de ZIP.
 
-De accounttoegang en de identiteit van de bestaande Netlify-site zijn nog niet beschikbaar in deze werkomgeving. De toegevoegde configuratie is geen bewijs van een uitgevoerde Netlify-publicatie.
+- Website: https://slimstartstudio.netlify.app
+- Netlify-site-ID: `d62b2b28-1644-4602-8fdb-60cfdc2794b2`.
+- De accountkoppeling en een geslaagde GitHub-publicatie zijn gecontroleerd via de Netlify-API.
+- De bestaande wachtwoordbeveiliging blijft behouden.
+- Lokale Netlify-accountgegevens en projectstatus worden niet in Git opgenomen.
 
 ### Supabase
 
