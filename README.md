@@ -30,4 +30,17 @@ De bestaande Netlify-site **slimstartstudio** is gekoppeld aan deze repository e
 
 ### Supabase
 
-Er is nog geen Supabase-koppeling in de website. Gebruik pas een project nadat de bestaande Project Anne-projectlocatie en de juiste accounttoegang zijn bevestigd. Plaats nooit geheime API-sleutels of service-role-sleutels in `dist/` of in Git. Supabase dient voor backendfuncties; de statische website wordt op de websitehosting gepubliceerd.
+De projectmap is via Supabase CLI 3.4.0 gekoppeld aan het bestaande project **Project Anne**:
+
+- Projectreferentie: `vrpsgwaiosibvgfsiriq`.
+- Regio: `eu-central-1`.
+- De afzonderlijke accountaanmelding, projectkoppeling en databaseverbinding zijn gecontroleerd. Een leesquery naar de gekoppelde database is geslaagd.
+- De lokale ontwikkelconfiguratie staat in `supabase/config.jsonc`. Tijdelijke projectstatus en accountgegevens worden niet in Git opgenomen.
+
+Een nieuwe checkout kan na aanmelding met het juiste account opnieuw worden gekoppeld met:
+
+```sh
+npx supabase@3.4.0 link --project-ref vrpsgwaiosibvgfsiriq
+```
+
+Deze eerste productwebsite is statisch en gebruikt nog geen databasefuncties. De beheerverbinding is gereed voor latere backenduitbreidingen. Er zijn geen tabellen of databasefuncties toegevoegd voor deze koppeling. Plaats nooit geheime API-sleutels of service-role-sleutels in `dist/` of in Git. Supabase dient voor backendfuncties; de statische website wordt op Netlify gepubliceerd.
